@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.bommel24.nvmlj</groupId>
+    <artifactId>nvmlj</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <name>NVML Wrapper</name>
+    <url>http://bommelmuetze24.de</url>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>net.java.dev.jna</groupId>
+            <artifactId>jna</artifactId>
+            <version>4.5.1</version>
+        </dependency>
+    </dependencies>
+
+    <properties>
+        <repo.public>http://maxhenkel.de:8081/artifactory/public</repo.public>
+        <repo.public.id>henkelmax.public</repo.public.id>
+        <jdk.version>1.8</jdk.version>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+    </properties>
+
+    <repositories>
+        <repository>
+            <id>henkelmax.public</id>
+            <url>http://maxhenkel.de:8081/artifactory/public</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>henkelmax.public</id>
+            <url>http://maxhenkel.de:8081/artifactory/public</url>
+        </repository>
+    </distributionManagement>
+
+</project>
