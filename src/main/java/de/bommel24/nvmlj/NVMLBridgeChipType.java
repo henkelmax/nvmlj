@@ -1,24 +1,25 @@
 package de.bommel24.nvmlj;
 
 public enum NVMLBridgeChipType {
-	NVML_BRIDGE_CHIP_PLX(0), NVML_BRIDGE_CHIP_BRO4(1);
 
-	private int i;
+    NVML_BRIDGE_CHIP_PLX(0), NVML_BRIDGE_CHIP_BRO4(1);
 
-	private NVMLBridgeChipType(int i) {
-		this.i = i;
-	}
+    private final int i;
 
-	public int getValue() {
-		return i;
-	}
+    NVMLBridgeChipType(int i) {
+        this.i = i;
+    }
 
-	public static NVMLBridgeChipType fromInt(int i) {
-		for (NVMLBridgeChipType ret : values()) {
-			if (i == ret.i) {
-				return ret;
-			}
-		}
-		return NVML_BRIDGE_CHIP_PLX;
-	}
+    public int getValue() {
+        return i;
+    }
+
+    public static NVMLBridgeChipType fromInt(int i) {
+        for (NVMLBridgeChipType ret : values()) {
+            if (i == ret.i) {
+                return ret;
+            }
+        }
+        return NVML_BRIDGE_CHIP_PLX;
+    }
 }

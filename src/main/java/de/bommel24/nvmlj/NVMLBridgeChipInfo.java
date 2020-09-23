@@ -7,17 +7,17 @@ import com.sun.jna.Structure;
 
 public class NVMLBridgeChipInfo extends Structure {
 
-	public int fwVersion;
-	public int type;
+    public int fwVersion;
+    public int type;
 
-	@Override
-	protected List<String> getFieldOrder() {
-		return Arrays.asList("fwVersion", "type");
-	}
+    @Override
+    protected List<String> getFieldOrder() {
+        return Arrays.asList("fwVersion", "type");
+    }
 
-	public static class ByReference extends NVMLBridgeChipInfo implements Structure.ByReference {
-	};
+    public static class ByReference extends NVMLBridgeChipInfo implements Structure.ByReference {
+    }
 
-	public static class ByValue extends NVMLBridgeChipInfo implements Structure.ByValue {
-	};
+    public static class ByValue extends NVMLBridgeChipInfo implements Structure.ByValue {
+    }
 }

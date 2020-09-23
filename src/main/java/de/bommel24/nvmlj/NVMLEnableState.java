@@ -1,24 +1,25 @@
 package de.bommel24.nvmlj;
 
 public enum NVMLEnableState {
-	NVML_FEATURE_DISABLED(0), NVML_FEATURE_ENABLED(1);
 
-	private int i;
+    NVML_FEATURE_DISABLED(0), NVML_FEATURE_ENABLED(1);
 
-	private NVMLEnableState(int i) {
-		this.i = i;
-	}
+    private final int i;
 
-	public int getValue() {
-		return i;
-	}
+    NVMLEnableState(int i) {
+        this.i = i;
+    }
 
-	public static NVMLEnableState fromInt(int i) {
-		for (NVMLEnableState ret : values()) {
-			if (i == ret.i) {
-				return ret;
-			}
-		}
-		return NVML_FEATURE_DISABLED;
-	}
+    public int getValue() {
+        return i;
+    }
+
+    public static NVMLEnableState fromInt(int i) {
+        for (NVMLEnableState ret : values()) {
+            if (i == ret.i) {
+                return ret;
+            }
+        }
+        return NVML_FEATURE_DISABLED;
+    }
 }

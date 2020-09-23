@@ -7,17 +7,17 @@ import com.sun.jna.Structure;
 
 public class NVMLHwbcEntry extends Structure {
 
-	public int hwbcId;
-	public char[] firmwareVersion = new char[32];
+    public int hwbcId;
+    public char[] firmwareVersion = new char[32];
 
-	@Override
-	protected List<String> getFieldOrder() {
-		return Arrays.asList("hwbcId", "firmwareVersion");
-	}
+    @Override
+    protected List<String> getFieldOrder() {
+        return Arrays.asList("hwbcId", "firmwareVersion");
+    }
 
-	public static class ByReference extends NVMLHwbcEntry implements Structure.ByReference {
-	};
+    public static class ByReference extends NVMLHwbcEntry implements Structure.ByReference {
+    }
 
-	public static class ByValue extends NVMLHwbcEntry implements Structure.ByValue {
-	};
+    public static class ByValue extends NVMLHwbcEntry implements Structure.ByValue {
+    }
 }

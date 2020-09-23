@@ -7,17 +7,18 @@ import com.sun.jna.Structure;
 
 @Deprecated
 public class NVMLEncoderSessionInfo extends Structure {
-	public int test;
-	public long test2;
 
-	@Override
-	protected List<String> getFieldOrder() {
-		return Arrays.asList("test", "test2");
-	}
+    public int test;
+    public long test2;
 
-	public static class ByReference extends NVMLEncoderSessionInfo implements Structure.ByReference {
-	};
+    @Override
+    protected List<String> getFieldOrder() {
+        return Arrays.asList("test", "test2");
+    }
 
-	public static class ByValue extends NVMLEncoderSessionInfo implements Structure.ByValue {
-	};
+    public static class ByReference extends NVMLEncoderSessionInfo implements Structure.ByReference {
+    }
+
+    public static class ByValue extends NVMLEncoderSessionInfo implements Structure.ByValue {
+    }
 }
