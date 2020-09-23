@@ -10,7 +10,7 @@ Maven (*pom.xml*)
 <dependency>
   <groupId>de.bommel24.nvmlj</groupId>
   <artifactId>nvmlj</artifactId>
-  <version>1.0.1</version>
+  <version>1.0.2</version>
 </dependency>
 ```
 
