@@ -1,5 +1,7 @@
 # NVMLJ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/henkelmax/nvmlj/Build) ![GitHub issues](https://img.shields.io/github/issues-raw/henkelmax/nvmlj) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/henkelmax/nvmlj?include_prereleases)
 
+![Logo](images/logo.png)
+
 A Java wrapper for the [NVIDIA Management Library](https://developer.nvidia.com/nvidia-management-library-nvml).
 
 ## Usage
