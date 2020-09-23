@@ -6,7 +6,7 @@
 
     <groupId>de.bommel24.nvmlj</groupId>
     <artifactId>nvmlj</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 
     <name>NVML Wrapper for Java</name>
     <url>https://bommelmuetze24.de</url>
