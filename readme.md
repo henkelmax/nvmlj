@@ -1,4 +1,4 @@
-# NVMLJ
+# NVMLJ ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/henkelmax/nvmlj/Build) ![GitHub issues](https://img.shields.io/github/issues-raw/henkelmax/nvmlj) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/henkelmax/nvmlj?include_prereleases)
 
 A Java wrapper for the [NVIDIA Management Library](https://developer.nvidia.com/nvidia-management-library-nvml).
 
@@ -12,6 +12,13 @@ Maven (*pom.xml*)
   <artifactId>nvmlj</artifactId>
   <version>1.0.1</version>
 </dependency>
+```
+
+``` xml
+<repository>
+  <id>henkelmax.public</id>
+  <url>https://maven.maxhenkel.de/repository/public</url>
+</repository>
 ```
 
 ## Example
