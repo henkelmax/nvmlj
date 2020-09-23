@@ -8,8 +8,8 @@
     <artifactId>nvmlj</artifactId>
     <version>1.0.1</version>
 
-    <name>NVML Wrapper</name>
-    <url>http://bommelmuetze24.de</url>
+    <name>NVML Wrapper for Java</name>
+    <url>https://bommelmuetze24.de</url>
 
     <packaging>jar</packaging>
 
@@ -17,28 +17,27 @@
         <dependency>
             <groupId>net.java.dev.jna</groupId>
             <artifactId>jna</artifactId>
-            <version>4.5.1</version>
+            <version>5.6.0</version>
         </dependency>
     </dependencies>
 
-    <properties>
-        <repo.public>http://maxhenkel.de:8081/artifactory/public</repo.public>
-        <repo.public.id>henkelmax.public</repo.public.id>
-        <jdk.version>1.8</jdk.version>
-        <finalName>${project.artifactId}-${project.version}</finalName>
-    </properties>
-
-    <repositories>
-        <repository>
-            <id>henkelmax.public</id>
-            <url>http://maxhenkel.de:8081/artifactory/public</url>
-        </repository>
-    </repositories>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <distributionManagement>
         <repository>
             <id>henkelmax.public</id>
-            <url>http://maxhenkel.de:8081/artifactory/public</url>
+            <url>https://maven.maxhenkel.de/repository/public</url>
         </repository>
     </distributionManagement>
 
